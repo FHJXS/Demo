@@ -1,0 +1,15 @@
+package com.news;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+@MapperScan("com.news.dao")
+public class CommonApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CommonApiApplication.class, args);
+	}
+
+}

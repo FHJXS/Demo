@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.15.179.175:3306/news_db?useSSL=false
+    username: admin
+    password: 123456
+  redis:
+    host: 106.15.179.175
+    database: 0
+    port: 6379
+    password: SuperReids123.
+    timeout: 5000ms
+    lettuce:
+      pool:
+        max-idle: 60
+        max-active: 60
+    
+logging:
+  level:
+    root: info
+    com.news.dao: debug
+    org.apache.http: info
+
+news:
+  spiderUrl: https://www.toutiao.com/ch/news_hot/
+  expireTime: 24
+

@@ -1,0 +1,5 @@
+package com.news.dto;
+
+public enum ResultCode {
+	SUCCESS, ERROR;
+}

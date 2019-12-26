@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.15.179.175:3306/news_db?useSSL=false
+    username: admin
+    password: 123456
+    
+logging:
+  level:
+    root: info
+    com.new.dao: trace

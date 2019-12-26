@@ -1,0 +1,21 @@
+package com.news.dto;
+
+import java.util.Objects;
+
+import lombok.Data;
+
+@Data
+public class ResultData {
+	private ResultCode code;
+	private Object data;
+
+	public ResultData(Object data) {
+		if (Objects.isNull(data)) {
+			this.data = "";
+			this.code = ResultCode.ERROR;
+		} else {
+			this.data = data;
+			this.code = ResultCode.SUCCESS;
+		}
+	}
+}
